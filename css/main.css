@@ -12,7 +12,12 @@ body{
 /* ==========end   Globals=========== */
 
 /* start navbar */
-
+nav .nav-link.active{
+    color: rgb(29, 214, 238) !important;
+}
+nav .nav-link:not(.active):hover{
+    color: #fff !important;
+}
 /* end navbar */
 .top{
     height: 500px;
