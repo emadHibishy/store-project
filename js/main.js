@@ -8,12 +8,20 @@ $(function(){
         }
     );
 
-    // toggle testimonial users' opinions
-    $('.testimonial__user').on('click',function(){
-        $('.testimonial__user').removeClass('active');
-        $(this).addClass('active');
-        let target = $(this).data('target');
-        $('.testimonial__opinion').hide();
-        $(target).fadeIn(1500);
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:3
+            }
+        }
     });
 });
